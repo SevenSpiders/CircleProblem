@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Problem Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Problem Visualization</h1>
+        <p id="explainer">This graphic is an interactive illustration of the following mathematical object:
+
+            <br>N nodes numbered 1,2,... N are arranged around a circle. A pointer to each node is then distributed either randomly or in order among all the nodes forming tuples (for example (1,2) => Node 1 pointing to Node 2 depicted below as arrows).
+            <br>Additionally we can introduce a shift factor so that instead of pointing to the inherited pointer the node points to (node + s) % N where s is the shift factor. 
+            
+            <br>
+            <br><a href="https://en.wikipedia.org/wiki/100_prisoners_problem">Wikipedia: 100 Prisoners Problem</a>
+        </p>
+        <canvas id="circleCanvas"></canvas>
+        <div>
+            <label for="numberInput">#Points: </label>
+            <input type="number" id="numberInput" min="1" value="10">
+            <label for="numberInput">Shift: </label>
+            <input type="number" id="shiftInput" min="0" value="0">
+            <div>
+                <button id="randomizeButton">Randomize</button>
+                <button id="sortButton">Sort</button>
+                <div class="setting">
+                    <label for="checkBox">Unique Pointers</label>
+                    <input type="checkbox" id="checkBoxUnique" checked>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <p id="loopInfo">Loop Lengths:</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

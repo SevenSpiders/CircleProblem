@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#circleCanvas {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+h1 {
+    color: #333;
+}
+
+input, button {
+    padding: 8px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#loopInfo {
+    color: grey;
+}
+
+#explainer {
+    text-align: justify;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.setting {
+    display: inline;
+}
